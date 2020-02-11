@@ -4,7 +4,7 @@ const app = express();
 
 app.use(
     cors({
-      origin: "http://localhost:5000"
+      origin: "http://localhost:5500"
     })
   );
 app.get("/", function(req, res) {
