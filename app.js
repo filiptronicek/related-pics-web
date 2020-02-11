@@ -49,6 +49,6 @@ app.get("/", function(req, res) {
     });
     
 });
-app.listen(5000, function() {
-  console.log("Related Pics listening on port 5000!");
+app.listen(process.env.PORT, function() {
+  console.log(`Related Pics listening on port ${process.env.PORT}!`);
 });
