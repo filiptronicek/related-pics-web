@@ -8,12 +8,8 @@ app.use(
     })
   );
 app.get("/", function(req, res) {
-  res.send("CORS TEST");
-
-
-
     "use strict";
-    console.log(req.query.url)
+    console.log(req.query.url);
     const request = require("request");
     
     let subscriptionKey = process.env["COMPUTER_VISION_SUBSCRIPTION_KEY"];
@@ -46,10 +42,7 @@ app.get("/", function(req, res) {
       }
 
       let jsonResponse = JSON.stringify(JSON.parse(body), null, "  ");
-      
-      for(let i = 0; i < JSON.parse(body).description.tags.length; i++) {
-          //console.log(JSON.parse(body).description.tags[i]);
-      }
+
       
       res.setHeader('content-type', 'application/json');
       res.send(jsonResponse);
@@ -57,5 +50,5 @@ app.get("/", function(req, res) {
     
 });
 app.listen(5000, function() {
-  console.log("Related Pics listening on port 3000!");
+  console.log("Related Pics listening on port 5000!");
 });
