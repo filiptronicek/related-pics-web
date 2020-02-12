@@ -4,7 +4,7 @@ const app = express();
 
 app.use(
     cors({
-      origin: "https://related-pics.now.sh/"
+      origin: "https://related-pics.now.sh"
     })
   );
 app.get("/", function(req, res) {
