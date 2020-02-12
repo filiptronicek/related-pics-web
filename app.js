@@ -30,7 +30,7 @@ app.get("/", function(req, res) {
       qs: params,
       body: '{"url": ' + '"' + imageUrl + '"}',
       headers: {
-        "Content-Type": "text/plain",
+        //"Content-Type": "text/plain",
         //"Content-Type": "application/json",
         "Ocp-Apim-Subscription-Key": subscriptionKey
       }
